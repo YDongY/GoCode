@@ -27,7 +27,7 @@ func main() {
 	fmt.Println(p.getName())
 
 	p.setName("jack")
-	// (&p).setName("jack") 也是值拷贝，底层做了优化
+	// (&p).setName("jack")
 
 	fmt.Println(p.getName())
 
