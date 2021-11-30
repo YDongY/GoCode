@@ -1,0 +1,4 @@
+[logger]2021/11/30 15:38:46.392742 /home/mark/golab/packages-example/log/log.go:16: 这是一条普通的日志
+[logger]2021/11/30 15:38:46.392780 /home/mark/golab/packages-example/log/log.go:18: 这是一条普通的日志
+[logger]2021/11/30 15:38:46.392782 /home/mark/golab/packages-example/log/log.go:19: 这是一条会触发 fatal 的日志
+[logger]2021/11/30 15:41:19.911034 /home/mark/golab/packages-example/log/log.go:16: 这是一条普通的日志

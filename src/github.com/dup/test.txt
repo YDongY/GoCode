@@ -1,4 +1,0 @@
-hello world
-hello world
-hello go
-go go go
