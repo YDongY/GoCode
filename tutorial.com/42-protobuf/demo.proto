@@ -1,0 +1,35 @@
+syntax = "proto3"; // 指定版本信息
+
+option go_package = "proto/";
+
+// 定义枚举
+enum Week{
+  Sunday = 0; // 在 proto3 中枚举值从 0 开始
+  Monday = 1;
+  Tuesday = 2;
+  Wednesday = 3;
+  Thursday = 4;
+  Friday = 5;
+  Saturday = 6;
+}
+
+message Person {
+  int32 weight = 1;
+}
+
+message Student{
+  string name = 1; // 可以不从 1 开始，但是不能重复，不能使用 19000-19999
+  int32 age = 2;
+  Person p = 3;
+  repeated int32 score = 4; // 数组、切片
+
+  // 枚举
+  Week w = 5;
+  // 联合体
+  oneof data{
+    string teacher = 6;
+    string class = 7;
+  }
+}
+
+// 消息字段都有一个标识符，范围是 1 ~ 536870911(2^29-1)，不能使用 19000~19999 不能使用
